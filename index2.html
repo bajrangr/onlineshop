@@ -252,68 +252,71 @@
     .copyright {
       text-align: center;
     }
+    /*-- all prod--*/
+    .row-2 {
+      justify-content: space-between;
+      margin: 100px auto 50px;
+    }
+    select {
+      border: 1px solid #ff523b;
+      padding: 1px;
+    }
+    select:focus {
+      outline: none;
+    }
+    .page-btn {
+      margin: 0 auto 80px;
+    }
+    .page-btn span {
+      display: inline-block;
+      border: 1px solid #ff523b;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .page-btn span:hover {
+      background: #ff523b;
+      color: white;
+    }
   </style>
   <body>
-    <header>
-      <div class="container">
-        <div class="nav-bar">
-          <div class="logo">
-            <img src="../onlineshop/public/images/logo.png" width="125px" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
-            </ul>
-          </nav>
-          <img
-            src="../onlineshop/public/images/cart.png"
-            width="30px"
-            height="30px"
-          />
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="../onlineshop/public/images/logo.png" width="125px" />
         </div>
-        <div class="row">
-          <div class="col-2">
-            <h1>Give Your Workout <br />A New Style!</h1>
-            <p>
-              Success isn't always about greatness. It's about consitency.
-              Consistent <br />hard work gains success. Greatness will come.
-            </p>
-            <a href="../onlineshop/index2.html" class="btn"
-              >Explore Now &#8594;</a
-            >
-          </div>
-          <div class="col-2">
-            <img src="../onlineshop/public/images/image1.png" />
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="../onlineshop/public/images/cart.png"
+          width="30px"
+          height="30px"
+        />
       </div>
-    </header>
-
-    <!-- featured section-->
+    </div>
     <section>
-      <div class="categories">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-3">
-              <img src="../onlineshop/public/images/category-1.jpg" />
-            </div>
-            <div class="col-3">
-              <img src="../onlineshop/public/images/category-2.jpg" />
-            </div>
-            <div class="col-3">
-              <img src="../onlineshop/public/images/category-3.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--feature prod-->
       <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+        <div class="row row-2">
+          <h2>All Products</h2>
+          <select>
+            <option>Default Shopping</option>
+            <option>Sort by price</option>
+            <option>Sort by popularity</option>
+            <option>Sort by rating</option>
+            <option>Sort by sale</option>
+          </select>
+        </div>
         <div class="row">
           <div class="col-4">
             <img src="../onlineshop/public/images/product-1.jpg" />
@@ -340,7 +343,7 @@
             <p>$75.00</p>
           </div>
         </div>
-        <h2 class="title">Latest Products</h2>
+
         <div class="row">
           <div class="col-4">
             <img src="../onlineshop/public/images/product-5.jpg" />
@@ -393,94 +396,17 @@
             <p>$45.00</p>
           </div>
         </div>
-      </div>
-      <!--Offer-->
-      <div class="offer">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-2">
-              <img
-                src="../onlineshop/public/images/MiBand-4.png"
-                class="offer-img"
-              />
-            </div>
-            <div class="col-2">
-              <p>Exclusively Available on RedStore</p>
-              <h1>Smart Band 4</h1>
-              <small
-                >The Mi Smart Band features a 39.9% larger (than Mi Band 3)
-                AMOLED color full-touch display with adjustable brightness, so
-                everything is clear as can be</small
-              >
-              <a href="" class="btn">Buy Now &#8594;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- testimonial -->
-      <div class="testimonial">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-3">
-              <div class="quote">&#10075;&#10075;</div>
-              <p class="quote-para">
-                "Our takeout just went through the roof because we could be
-                taking five orders at one time, instead of just one order at a
-                time."
-              </p>
-              <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-              <img src="../onlineshop/public/images/user-1.jpg" />
-              <h3>Sean Parker</h3>
-            </div>
-            <div class="col-3">
-              <div class="quote">&#10075;&#10075;</div>
-              <p class="quote-para">
-                "Our takeout just went through the roof because we could be
-                taking five orders at one time, instead of just one order at a
-                time."
-              </p>
-              <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-              <img src="../onlineshop/public/images/user-2.jpg" />
-              <h3>Peter Parker</h3>
-            </div>
-            <div class="col-3">
-              <div class="quote">&#10075;&#10075;</div>
-              <p class="quote-para">
-                "Our takeout just went through the roof because we could be
-                taking five orders at one time, instead of just one order at a
-                time."
-              </p>
-              <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-              <img src="../onlineshop/public/images/user-3.jpg" />
-              <h3>Andrea Marshal</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- brands -->
-      <div class="brands">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-5">
-              <img src="../onlineshop/public/images/logo-godrej.png" />
-            </div>
-            <div class="col-5">
-              <img src="../onlineshop/public/images/logo-oppo.png" />
-            </div>
-            <div class="col-5">
-              <img src="../onlineshop/public/images/logo-coca-cola.png" />
-            </div>
-            <div class="col-5">
-              <img src="../onlineshop/public/images/logo-paypal.png" />
-            </div>
-            <div class="col-5">
-              <img src="../onlineshop/public/images/logo-philips.png" />
-            </div>
-          </div>
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>&#8594;</span>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
